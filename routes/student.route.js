@@ -91,7 +91,7 @@ router.get("/specific-get", (request, response) => {
   );
 });
 
-// http://localhost:5000/students/al GET ALL STUDENTS ORDERED BY ENROLLMENT DATE
+// http://localhost:5000/students/order-by-date GET ALL STUDENTS ORDERED BY ENROLLMENT DATE
 router.get("/order-by-data", (request, response) => {
     connection.query(
       "SELECT * FROM student ORDER BY enrollment_date",
